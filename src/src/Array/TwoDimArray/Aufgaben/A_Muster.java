@@ -2,7 +2,7 @@ package src.Array.TwoDimArray.Aufgaben;
 
 public class A_Muster {
     public static void main(String[] args) {
-        char[][] array = new char[5][5];
+        char[][] array = new char[9][9];
 
         fillWithAMuster(array);
         if (array.length % 2 != 0) {

@@ -9,6 +9,7 @@ public class FirstSteps {
                 {10, 11, 12, 13, 14, 15}
         };
 
+
         System.out.println("Array 1: ");
         System.out.println("Length of Array1 = " + array.length);
         System.out.println("Length of line 1 in  Array1 = " + array[0].length);

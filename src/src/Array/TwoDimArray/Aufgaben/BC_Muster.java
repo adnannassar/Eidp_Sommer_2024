@@ -2,7 +2,7 @@ package src.Array.TwoDimArray.Aufgaben;
 
 public class BC_Muster {
     public static void main(String[] args) {
-        char[][] array = new char[7][7];
+        char[][] array = new char[13][13];
 
         fillWithBCMuster(array);
         if (array.length % 2 != 0 && array.length == array[0].length) {

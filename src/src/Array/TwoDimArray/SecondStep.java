@@ -29,7 +29,6 @@ public class SecondStep {
             for (int j = 0; j < array.length; j++) {
                 array[i][j] = counter;
                 counter++;
-
             }
         }
     }
