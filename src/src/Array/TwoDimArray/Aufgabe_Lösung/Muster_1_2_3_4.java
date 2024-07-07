@@ -31,6 +31,12 @@ public class Muster_1_2_3_4 {
                                 && i + j < array.length - 1
                 ) {
                     array[i][j] = '4';
+                } else if (i < array.length / 2 && i + j < array.length - 1) {
+                    array[i][j] = '1';
+                } else if (i > array.length / 2 && i > j) {
+                    array[i][j] = '3';
+                } else if (j > array.length / 2 && j > i) {
+                    array[i][j] = '2';
                 } else {
                     array[i][j] = ' ';
                 }

@@ -6,7 +6,7 @@ public class SortAlgorithm {
         System.out.print("Before: ");
         printArray(array);
 
-        bubbleSort(array);
+        selectionSortAufsteigend(array);
 
         System.out.print("After:  ");
         printArray(array);
@@ -15,14 +15,31 @@ public class SortAlgorithm {
 
     public static void bubbleSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length - 1 - i ; j++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+                    swap(array, j, j + 1);
                 }
             }
         }
+    }
+
+
+    public static void selectionSortAufsteigend(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            swap(array, i, minIndex);
+        }
+    }
+
+    public static void swap(int[] array, int i, int j) {
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 
     public static void printArray(int[] array) {
