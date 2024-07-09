@@ -1,4 +1,4 @@
-package src.OOP.Vererbung;
+package src.OOP.Vererbung.UniVerwaltung;
 
 public class Professor extends Person {
     private int id;

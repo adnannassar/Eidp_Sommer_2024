@@ -1,6 +1,6 @@
-package src.OOP.Vererbung;
+package src.OOP.Vererbung.UniVerwaltung;
 
-public class Dekan extends Professor{
+public class Dekan extends Professor {
     private String fachbereich;
 
     public Dekan(String name, int birthYear, int id, double gehalt, String fachbereich){

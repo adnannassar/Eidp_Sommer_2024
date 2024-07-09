@@ -1,4 +1,4 @@
-package src.OOP.Vererbung;
+package src.OOP.Vererbung.UniVerwaltung;
 
 public class Main {
     public static void main(String[] args) {

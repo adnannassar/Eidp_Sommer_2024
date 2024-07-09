@@ -3,10 +3,14 @@ package src.OOP.Classes.NewCurse;
 public class Student {
     private String name;
     private float note = 0.0f;
+    private int id;
+    private static int counter = 1;
 
     public Student(String name, float note) {
         this.name = name;
         this.note = note;
+        this.id = counter;
+        counter++;
     }
 
 
@@ -19,6 +23,9 @@ public class Student {
         return note;
     }
 
+    public int getId() {
+        return id;
+    }
 
     // setters
     public void setName(String name) {
