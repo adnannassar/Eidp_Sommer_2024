@@ -6,6 +6,7 @@ public class Main {
         System.out.println(student1.getName());
         changeName(student1);
         System.out.println(student1.getName());
+
     }
 
     public static void changeName(Student student) {

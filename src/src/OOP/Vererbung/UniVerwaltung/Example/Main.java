@@ -1,13 +1,14 @@
 package src.OOP.Vererbung.UniVerwaltung.Example;
 
 public class Main {
-    public static void main(String[] args) {
-        A a = new B(100, 200);
-        a.test();
 
-        B b = new B(10, 20);
-        b.test();
+    public static void main(String[] args) {
+        A a1 = new A(100);
+        A a2 = new A(101);
+
+        a1 = a2;
     }
+
 }
 
 class A {

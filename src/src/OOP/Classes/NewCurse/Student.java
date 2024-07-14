@@ -6,6 +6,7 @@ public class Student {
     private int id;
     private static int counter = 1;
 
+
     public Student(String name, float note) {
         this.name = name;
         this.note = note;
