@@ -14,7 +14,6 @@ public class Student {
         counter++;
     }
 
-
     // getters
     public String getName() {
         return name;
@@ -35,5 +34,10 @@ public class Student {
 
     public void setNote(float note) {
         this.note = note;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + this.id + ", Name: " + this.name + ", Note: " + this.note;
     }
 }
